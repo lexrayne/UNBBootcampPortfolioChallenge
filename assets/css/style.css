@@ -22,12 +22,13 @@ header h1 {
 
 main {
     display: flex;
-    min-height: 80%;
+    min-height: 80vh;
 }
 
 .sample {
     min-width: 300px;
     min-height: 300px;
+    margin: 5px;
     background-color: darkslateblue;
 }
 
