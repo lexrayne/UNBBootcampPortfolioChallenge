@@ -1,6 +1,7 @@
 :root {
     --main-bg-color: #f6f6f6;
     --header-h1-color: darkslateblue;
+    --footer-text-color: darkslateblue;
 }
 
 body {
@@ -22,16 +23,21 @@ header h1 {
 
 main {
     display: flex;
-    min-height: 80%;
+    flex-wrap: wrap;
+    min-height: 80vh;
 }
 
 .sample {
     min-width: 300px;
-    min-height: 300px;
+    max-height: 300px;
+    margin: 5px;
     background-color: darkslateblue;
 }
 
 footer {
+    display: flex;
+    margin-top: auto;
     padding: 2%;
     justify-content: center;
+    color: var(--footer-text-color);
 }
