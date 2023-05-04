@@ -22,5 +22,16 @@ header h1 {
 
 main {
     display: flex;
+    min-height: 80%;
+}
 
+.sample {
+    min-width: 300px;
+    min-height: 300px;
+    background-color: darkslateblue;
+}
+
+footer {
+    padding: 2%;
+    justify-content: center;
 }
