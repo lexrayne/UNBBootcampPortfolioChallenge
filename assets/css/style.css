@@ -1,13 +1,26 @@
+:root {
+    --main-bg-color: #f6f6f6;
+    --header-h1-color: darkslateblue;
+}
+
 body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
+    background-color: var(--main-bg-color);
+}
+
+header {
+    margin: 0;
+    padding: 0;
 }
 
 header h1 {
     font-size: 200%;
-    margin: 2%;
+    padding: 2%;
+    color: var(--header-h1-color);
 }
 
 main {
     display: flex;
+
 }
