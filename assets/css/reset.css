@@ -5,6 +5,13 @@
     box-sizing: border-box;
 }
 
+/* All child elements will inherit the box-sizing from their parent */
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
 /* Gives the body element a parent height to compare against */
 html {
     height: 100%;
