@@ -17,19 +17,32 @@ header {
 
 header h1 {
     font-size: 200%;
-    padding: 2%;
+    padding: 2% 2% 10px 2%;
+    color: var(--header-h1-color);
+}
+
+header h2 {
+    font-size: 100%;
+    padding: 0% 2% 20px 2%;
     color: var(--header-h1-color);
 }
 
 main {
     display: flex;
     flex-wrap: wrap;
-    min-height: 80vh;
+    flex: 1 1 0;
+    min-height: 70vh;
+}
+
+.portfolio {
+    background-color: cornflowerblue;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100vw;
+    min-height: 60vh;
 }
 
 .sample {
-    min-width: 300px;
-    max-height: 300px;
     margin: 5px;
     background-color: darkslateblue;
 }
