@@ -1,7 +1,7 @@
 :root {
-    --main-bg-color: #f6f6f6;
-    --header-h1-color: darkslateblue;
-    --footer-text-color: darkslateblue;
+    --main-bg-color: #323033;
+    --header-h1-color: violet;
+    --footer-text-color: violet;
 }
 
 body {
@@ -30,21 +30,22 @@ header h2 {
 main {
     display: flex;
     flex-wrap: wrap;
-    flex: 1 1 0;
     min-height: 70vh;
 }
 
 .portfolio {
-    background-color: cornflowerblue;
+    background-color: var(--header-h1-color);
     display: flex;
     flex-wrap: wrap;
     width: 100vw;
     min-height: 60vh;
 }
 
+.portfolio > * {
+    flex: 1 1 0;
+}
+
 .sample {
-    width: 300px;
-    height: 300px;
     margin: 5px;
     background-color: darkslateblue;
 }
