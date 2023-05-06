@@ -1,13 +1,12 @@
 :root {
-    --main-bg-color: #323033;
-    --header-h1-color: violet;
-    --footer-text-color: violet;
+    --dark: #323033;
+    --light: violet;
 }
 
 body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
-    background-color: var(--main-bg-color);
+    background-color: var(--dark);
 }
 
 header {
@@ -15,26 +14,27 @@ header {
     padding: 0;
 }
 
-header h1 {
+h1 {
     font-size: 200%;
     padding: 2% 2% 10px 2%;
-    color: var(--header-h1-color);
+    color: var(--light);
 }
 
-header h2 {
+h2 {
     font-size: 100%;
     padding: 0% 2% 20px 2%;
-    color: var(--header-h1-color);
+    color: var(--light);
 }
 
 main {
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
     min-height: 70vh;
 }
 
 .portfolio {
-    background-color: var(--header-h1-color);
+    background-color: var(--light);
     display: flex;
     flex-wrap: wrap;
     width: 100vw;
@@ -46,8 +46,26 @@ main {
 }
 
 .sample {
+    max-width: 400px;
+    max-height: 400px;
+    min-width: 300px;
+    min-height: 300px;
     margin: 5px;
     background-color: darkslateblue;
+}
+
+.about-me {
+    background-color: var(--dark);
+    min-height: 40vh;
+}
+
+.contact {
+    background-color: var(--light);
+    min-height: 40vh;
+}
+
+.contact h2 {
+    color: var(--dark);
 }
 
 footer {
@@ -55,5 +73,5 @@ footer {
     margin-top: auto;
     padding: 2%;
     justify-content: center;
-    color: var(--footer-text-color);
+    color: var(--light);
 }
