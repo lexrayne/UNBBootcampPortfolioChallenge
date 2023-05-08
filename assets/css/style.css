@@ -66,25 +66,34 @@ main {
     flex-direction: column;
     flex-wrap: wrap;
     min-height: 70vh;
+    width: 100%;
 }
 
 .portfolio {
     background-color: var(--light);
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     width: 100%;
     min-height: 60vh;
+}
+
+.portfolio h3 {
+    color: var(--dark);
 }
 
 .portfolio > * {
     flex: 1 1 0;
 }
 
+.showcase {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 2% 2% 2%;
+}
+
 .sample {
-    max-width: 400px;
-    max-height: 400px;
-    min-width: 300px;
-    min-height: 300px;
+    width: 30vw;
+    height: 30vh;
     margin: 5px;
     background-color: darkslateblue;
 }
@@ -130,9 +139,7 @@ footer {
 
 /* Tablets - header changes color */
 @media screen and (max-width: 992px) {
-    .about-me img {
 
-    }
   }
   
   /* Large smartphones - navbar changes color */
@@ -141,6 +148,11 @@ footer {
         width: 250px;
         height: 250px;
     }
+
+    .sample {
+        width: 40vw;
+        height: 40vh;
+    }
   }
   
   /* Small smartphones - image placeholders change color */
@@ -148,6 +160,11 @@ footer {
     .about-me img {
         width: 200px;
         height: 200px;
+    }
+
+    .sample {
+        width: 90vw;
+        height: 45vh;
     }
   }
   
