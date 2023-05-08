@@ -92,6 +92,21 @@ main {
 .about-me {
     background-color: var(--dark);
     min-height: 40vh;
+    display: flex;
+    color: white;
+}
+
+.about-me p {
+    margin: 2%;
+}
+
+.about-me img {
+    width: 300px;
+    height: 300px;
+    margin: 10px;
+    padding: 10px;
+    border: 10px solid var(--light);
+    background-color: white;
 }
 
 .contact {
