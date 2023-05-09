@@ -15,6 +15,7 @@ a {
 
 header {
     display: flex;
+    height: 13vh;
     margin: 0;
     padding: 0;
     justify-content: space-between;
@@ -22,6 +23,7 @@ header {
 
 header div {
     width: 50%;
+    margin: auto 20px;
 }
 
 .header-links {
@@ -47,13 +49,12 @@ header div {
 
 h1 {
     font-size: 200%;
-    padding: 2% 2% 10px 2%;
     color: var(--light);
 }
 
 h2, h3 {
     font-size: 120%;
-    padding: 0% 2% 20px 2%;
+    padding: 10px 0 20px 0;
     color: var(--light);
 }
 
@@ -65,7 +66,6 @@ main {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    min-height: 70vh;
     width: 100%;
 }
 
@@ -73,8 +73,8 @@ main {
     background-color: var(--light);
     display: flex;
     flex-direction: column;
-    width: 100%;
-    min-height: 60vh;
+    padding: 0px 20px;
+    min-height: 87vh;
 }
 
 .portfolio h3 {
@@ -88,7 +88,6 @@ main {
 .showcase {
     display: flex;
     flex-wrap: wrap;
-    margin: 0 2% 2% 2%;
 }
 
 .sample {
@@ -102,11 +101,8 @@ main {
     background-color: var(--dark);
     min-height: 40vh;
     display: flex;
+    padding: 0px 20px;
     color: white;
-}
-
-.about-me p {
-    margin: 2%;
 }
 
 .about-me img {
@@ -121,6 +117,8 @@ main {
 .contact {
     background-color: var(--light);
     min-height: 40vh;
+    padding: 0px 20px;
+    color: var(--dark);
 }
 
 .contact h3 {
@@ -135,15 +133,12 @@ footer {
     color: var(--light);
 }
 
-/* When using `max-width` as the breakpoint, you must go from widest to narrowest to avoid conflict */
 
-/* Tablets - header changes color */
 @media screen and (max-width: 992px) {
 
-  }
-  
-  /* Large smartphones - navbar changes color */
-  @media screen and (max-width: 768px) {
+}
+
+@media screen and (max-width: 768px) {
     .about-me img {
         width: 250px;
         height: 250px;
@@ -153,10 +148,10 @@ footer {
         width: 40vw;
         height: 40vh;
     }
-  }
-  
-  /* Small smartphones - image placeholders change color */
-  @media screen and (max-width: 576px) {
+}
+
+
+@media screen and (max-width: 576px) {
     .about-me img {
         width: 200px;
         height: 200px;
@@ -166,5 +161,4 @@ footer {
         width: 90vw;
         height: 45vh;
     }
-  }
-  
+}
