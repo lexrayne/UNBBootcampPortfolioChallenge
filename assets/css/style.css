@@ -115,10 +115,28 @@ main {
 }
 
 .contact {
+    display: flex;
+    flex-direction: column;
     background-color: var(--light);
     min-height: 40vh;
-    padding: 0px 20px;
+    padding: 0px 20px 40px 20px;
     color: var(--dark);
+}
+
+.contact form {
+    text-align: center;
+}
+
+.contact input {
+    width: 400px;
+    height: 25px;
+    border: 1px solid var(--dark);
+}
+
+.contact textarea {
+    width: 400px;
+    height: 200px;
+    border: 1px solid var(--dark);
 }
 
 .contact h3 {
