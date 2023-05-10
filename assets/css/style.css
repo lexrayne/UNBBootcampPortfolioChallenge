@@ -94,7 +94,7 @@ main {
     width: 30vw;
     height: 30vh;
     margin: 5px;
-    background-color: darkslateblue;
+    background-color: white;
 }
 
 .sample:nth-child(1) {
