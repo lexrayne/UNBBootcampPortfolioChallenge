@@ -56,12 +56,6 @@ header div {
 h1 {
     font-size: 200%;
     color: var(--light);
-    padding: 2% 2% 10px 2%;
-}
-
-header h2 {
-    font-size: 100%;
-    padding: 0% 2% 20px 2%;
 }
 
 h2, h3 {
@@ -102,19 +96,7 @@ main {
     flex: 1 1 22%;
     min-width: 20%;
     height: 150px;
-    flex: 1 1 0;
-    min-height: 70vh;
-}
 
-.portfolio {
-    background-color: cornflowerblue;
-    display: flex;
-    flex-wrap: wrap;
-    width: 100vw;
-    min-height: 60vh;
-}
-
-.sample {
     margin: 5px;
     background-color: var(--dark);
     border: 5px solid white;
