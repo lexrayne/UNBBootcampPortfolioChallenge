@@ -1,3 +1,4 @@
+/* Set color theme variables */
 :root {
     --dark: #323033;
     --light: violet;
@@ -13,6 +14,7 @@ a {
     color: var(--light);
 }
 
+/* Main flexbox for header */
 header {
     display: flex;
     height: 13vh;
@@ -21,16 +23,19 @@ header {
     justify-content: space-between;
 }
 
+/* Used for spacing flexbox elements in header */
 header div {
     width: 50%;
     margin: auto 20px;
 }
 
+/* Flexbox for header links */
 .header-links {
     display: flex;
     justify-content: end;
 }
 
+/* Used to space header links */
 .header-links ul {
     width: 250px;
     display: flex;
@@ -62,13 +67,14 @@ h3 {
     padding-top: 2%;
 }
 
+/* Flexbox for main tag */
 main {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
     width: 100%;
 }
 
+/* Portfolio section */
 .portfolio {
     background-color: var(--light);
     display: flex;
@@ -81,27 +87,25 @@ main {
     color: var(--dark);
 }
 
-.portfolio > * {
-    flex: 1 1 0;
-}
-
 .showcase {
     display: flex;
     flex-wrap: wrap;
 }
 
 .sample {
-    width: 30vw;
-    height: 30vh;
+    flex: 1 1 22%;
+    height: 75px;
+
     margin: 5px;
     background-color: white;
 }
 
 .sample:nth-child(1) {
-    width: 60vh;
-    height: 60vh;
+    flex: 1 1 47%;
+    height: 150px;
 }
 
+/* About Me section */
 .about-me {
     background-color: var(--dark);
     min-height: 40vh;
@@ -119,6 +123,7 @@ main {
     background-color: white;
 }
 
+/* Contact section */
 .contact {
     display: flex;
     flex-direction: column;
@@ -156,9 +161,12 @@ footer {
     color: var(--light);
 }
 
-
+/* Media queries */
 @media screen and (max-width: 992px) {
-
+    .about-me img {
+        width: 300px;
+        height: 300px;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -168,8 +176,6 @@ footer {
     }
 
     .sample {
-        width: 40vw;
-        height: 40vh;
     }
 }
 
@@ -181,7 +187,5 @@ footer {
     }
 
     .sample {
-        width: 90vw;
-        height: 45vh;
     }
 }
