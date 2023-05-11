@@ -10,27 +10,68 @@
 </head>
 <body>
     <header>
-        <h1>Lex MacLellan</h1>
-        <h2>Full-Stack Web Developer</h2>
+        <div>
+            <h1>Lex MacLellan</h1>
+            <h2>Full-Stack Web Developer</h2>
+        </div>
+        <div class="header-links">
+            <ul>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#about-me">About Me</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
     </header>
     <main>
-        <section class="portfolio">
-            <div class="sample">
+        <section id="portfolio" class="portfolio">
+            <div class="portfolio-header">
+                <h3>Portfolio</h3>
             </div>
-            <div class="sample">
-            </div>
-            <div class="sample">
-            </div>
-            <div class="sample">
+            <div class="showcase">
+                <div class="sample">
+                <p><a href="#">Sample 1</a></p></div>
+                <div class="sample">
+                <p><a href="#">Sample 2</a></p></div>
+                <div class="sample">
+                <p><a href="#">Sample 3</a></p></div>
+                <div class="sample">
+                <p><a href="#">Sample 4</a></p></div>
+                <div class="sample">
+                <p><a href="#">Sample 5</a></p></div>
+                <div class="sample">
+                <p><a href="#">Sample 6</a></p></div>
             </div>
         </section>
 
-        <section class="about-me">
-
+        <section id="about-me" class="about-me">
+            <div>
+                <h3>About Me</h3>
+                <p>Lex MacLellan is a full-stack web developer based out of Fredericton, New Brunswick, Canada. In her free time she enjoys creative writing, tabletop RPGs and playing the guitar.</p>
+            </div>
+            <div>
+                <img src="assets/images/lex.jpg" />
+            </div>
         </section>
 
-        <section class="contact">
-
+        <section id="contact" class="contact">
+            <h3>Contact</h3>
+            <form>
+                <p>
+                    <input type="text" id="name" name="name" placeholder="Your Name">
+                </p>
+                <p>
+                    <input type="text" id="email" name="email" placeholder="your.email@example.com">
+                </p>
+                <p>
+                    <input type="text" id="subject" name="subject" placeholder="Subject">
+                </p>
+                <p>
+                    <textarea id="message" placeholder="Message"></textarea>
+                </p>
+                <p>
+                    <input type="submit" value="Submit" class="submit">
+                </p>
+            </form>
         </section>
     </main>
     <footer>

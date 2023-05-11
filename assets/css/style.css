@@ -1,35 +1,107 @@
+/* Set color theme variables */
 :root {
-    --main-bg-color: #f6f6f6;
-    --header-h1-color: darkslateblue;
-    --footer-text-color: darkslateblue;
+    --dark: #323033;
+    --light: violet;
 }
 
 body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
-    background-color: var(--main-bg-color);
+    background-color: var(--dark);
 }
 
+a {
+    color: var(--light);
+}
+
+/* Main flexbox for header */
 header {
+    display: flex;
+    min-height: 13vh;
+    flex-wrap: wrap;
     margin: 0;
     padding: 0;
+    justify-content: space-between;
 }
 
-header h1 {
+/* Used for spacing flexbox elements in header */
+header div {
+    width: 40%;
+    margin: auto 20px;
+}
+
+/* Flexbox for header links */
+.header-links {
+    display: flex;
+    justify-content: end;
+}
+
+/* Used to space header links */
+.header-links ul {
+    width: 250px;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+}
+
+.header-links a {
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.header-links a:hover {
+    text-decoration: underline;
+}
+
+h1 {
     font-size: 200%;
+    color: var(--light);
     padding: 2% 2% 10px 2%;
-    color: var(--header-h1-color);
 }
 
 header h2 {
     font-size: 100%;
     padding: 0% 2% 20px 2%;
-    color: var(--header-h1-color);
 }
 
+h2, h3 {
+    font-size: 120%;
+    padding: 10px 0 20px 0;
+    color: var(--light);
+}
+
+h3 {
+    padding-top: 2%;
+}
+
+/* Flexbox for main tag */
 main {
     display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+/* Portfolio section */
+.portfolio {
+    background-color: var(--light);
+    display: flex;
+    flex-direction: column;
+    padding: 0px 20px 20px 20px;
+}
+
+.portfolio h3 {
+    color: var(--dark);
+}
+
+.showcase {
+    display: flex;
     flex-wrap: wrap;
+}
+
+.sample {
+    flex: 1 1 22%;
+    min-width: 20%;
+    height: 150px;
     flex: 1 1 0;
     min-height: 70vh;
 }
@@ -44,7 +116,75 @@ main {
 
 .sample {
     margin: 5px;
-    background-color: darkslateblue;
+    background-color: var(--dark);
+    border: 5px solid white;
+}
+
+.sample p {
+    margin: 2%;
+}
+
+.sample a {
+    font-weight: bold;
+    color: var(--light);
+    text-decoration: none;
+}
+
+.sample a:hover {
+    text-decoration: underline;
+}
+
+.sample:nth-child(1) {
+    flex: 1 1 44%;
+    height: 300px;
+}
+
+/* About Me section */
+.about-me {
+    background-color: var(--dark);
+    min-height: 40vh;
+    display: flex;
+    padding: 0px 0px 0px 20px;
+    color: white;
+}
+
+.about-me img {
+    width: 300px;
+    height: 300px;
+    margin: 10px;
+    padding: 10px;
+    border: 10px solid var(--light);
+    background-color: white;
+}
+
+/* Contact section */
+.contact {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--light);
+    min-height: 40vh;
+    padding: 0px 20px 40px 20px;
+    color: var(--dark);
+}
+
+.contact form {
+    text-align: center;
+}
+
+.contact input {
+    width: 400px;
+    height: 25px;
+    border: 1px solid var(--dark);
+}
+
+.contact textarea {
+    width: 400px;
+    height: 200px;
+    border: 1px solid var(--dark);
+}
+
+.contact h3 {
+    color: var(--dark);
 }
 
 footer {
@@ -52,5 +192,62 @@ footer {
     margin-top: auto;
     padding: 2%;
     justify-content: center;
-    color: var(--footer-text-color);
+    color: var(--light);
+}
+
+/* Media queries */
+@media screen and (max-width: 992px) {
+    .about-me img {
+        width: 300px;
+        height: 300px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    header div {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .header-links {
+        justify-content: center;
+    }
+
+    .about-me img {
+        width: 250px;
+        height: 250px;
+    }
+
+    .sample {
+        flex: 1 1 44%;
+        min-width: 40%;
+        height: 120px;
+    }
+}
+
+
+@media screen and (max-width: 576px) {
+    header div {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .header-links {
+        justify-content: center;
+    }
+
+    .about-me img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .sample {
+        flex: 1 1 89%;
+        min-width: 80%;
+        height: 100px;
+    }
 }
