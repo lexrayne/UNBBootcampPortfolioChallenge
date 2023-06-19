@@ -100,6 +100,13 @@ main {
     margin: 5px;
     background-color: var(--dark);
     border: 5px solid white;
+    color: white;
+}
+
+.poke {
+    background-image: url('assets/images/pokeplaylist.jpg');
+    background-size: 100% 100%;
+    color: black;
 }
 
 .sample p {
